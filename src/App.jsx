@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Check, Upload, Send, TrendingUp, Sparkles } from 'lucide-react';
+import download from './assets/download.png'
 
 export default function App() {
   const features = [
@@ -31,9 +32,13 @@ export default function App() {
             </div>
             <span className="text-xl font-semibold">CuBill</span>
           </div>
-          <button className="px-6 py-2 bg-[#17B978] text-white rounded-lg font-medium hover:bg-[#15a569] transition-colors">
-            Get Started
-          </button>
+          <a href="https://play.google.com/store/apps/details?id=com.viruzverse.billbronew" target="_blank" rel="noopener noreferrer">
+            <img 
+              src={download}
+              alt="Get it on Google Play" 
+              className="h-15 hover:opacity-80 transition-opacity"
+            />
+          </a>
         </div>
       </header>
 
